@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Compras</title>
+    <title>Lista de Compras - Callbox</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&family=Numans&display=swap"
@@ -13,6 +13,44 @@
 </head>
 
 <body>
+    <main>
+        <img src="img/bag.png" alt="sacola de compras">
+        <form action="">
+            <input id="input-item" id="input-item" type="text" placeholder="Digite o item que deseja adicionar" />
+            <button class="buttom-item" id="adicionar-item">Salvar item</button>
+        </form>
+        <div class="container-lista">
+            <h2>Lista de compras</h2>
+            <hr />
+            <ul id="lista-de-compras">
+                <li>
+                    <div class="item-lista-container">
+                        <div class="container-nome-compra">
+                            <div class="checkbox-container">
+                                <label for="checkbox-1">
+                                    <input type="checkbox" class="checkbox-input" id="checkbox-1"/>
+                                    <div class="checkbox-customizado checked"></div>
+                                </label>
+                            </div>
+                            <p>Ração de gato</p>
+                        </div>
+                        <div>
+                            <button class="item-lista-button">
+                                <img src="img/delete.svg" alt="Deletar">
+                            </button>
+                            <button class="item-lista-button">
+                                <img src="img/edit.svg" alt="Editar">
+                            </button>
+                        </div>
+                    </div>
+                    <p class="item-lista-texto">Segunda-feria (31/01/202) as 08:30</p>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+
+    <script src="scripts.js"></script>
 
 </body>
 
